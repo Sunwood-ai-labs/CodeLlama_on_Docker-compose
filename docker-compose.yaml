@@ -6,7 +6,7 @@ services:
     build: .
     tty: true
     volumes:
-      - .:/root
+      - .:/home
     deploy:
       resources:
         reservations:

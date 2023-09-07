@@ -8,4 +8,8 @@ RUN pip install rwkv transformers accelerate sentencepiece colorama
 RUN pip install llama-cpp-python
 RUN pip install einops bitsandbytes scipy
 
+# codellama-13b-chat
+COPY requirements.txt .
+RUN pip install -r requirements.txt
+
 WORKDIR /home
